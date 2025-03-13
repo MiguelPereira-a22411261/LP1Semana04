@@ -2,9 +2,17 @@
 
 namespace BetterDecorador
 {
+    
     public class Program
     {
-
+        /// <summary>
+        /// Gets user input.
+        /// Turns 1st argument into a string.
+        /// Turns 2nd argument into a character.
+        /// Turns 3rd argument into an integer and converts it to string.
+        /// Displays the end result using the method Decor.
+        /// </summary>
+        /// <param name="args">Arguments inputted into the console.</param>
         private static void Main(string[] args)
         {
             string str = args[0];
