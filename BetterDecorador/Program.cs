@@ -18,17 +18,19 @@ namespace BetterDecorador
         /// <param name="args">Arguments inputted into the console.</param>
         private static void Main(string[] args)
         {
-            string str = args[0];
-            char chr = args[1][0];
-            int count = Int32.Parse(args[2]);
-            
             if (args.Length == 0)
             {
                 Console.WriteLine(Decor());
                 return;
             }
+            else
+            {
+                string str = args[0];
+                char chr = args[1][0];
+                int count = Int32.Parse(args[2]);
+                Console.WriteLine(Decor(str, chr, count));
+            }
 
-            Console.WriteLine(Decor(str, chr, count));
         }
         /// <summary>
         /// Defines how the user input is going to be structured.
