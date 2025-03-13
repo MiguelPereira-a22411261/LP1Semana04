@@ -21,6 +21,13 @@ namespace BetterDecorador
 
             Console.WriteLine(Decor(str, chr, count));
         }
+        /// <summary>
+        /// Defines how the user input is going to be structured.
+        /// </summary>
+        /// <param name="str">Text to be decorated.</param>
+        /// <param name="chr">Character to decorate the text.</param>
+        /// <param name="count">Amount of times the character is going to appear.</param>
+        /// <returns>Returns the character the amount of times set by "count", behind and after the text.</returns>
         private static string Decor(string str, char chr, int count)
         {
             string decoration = new string(chr, count);
