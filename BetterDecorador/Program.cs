@@ -10,10 +10,12 @@ namespace BetterDecorador
     {
         /// <summary>
         /// Gets user input.
-        /// Turns 1st argument into a string.
-        /// Turns 2nd argument into a character.
-        /// Turns 3rd argument into an integer and converts it to string.
-        /// Displays the end result using the method Decor.
+        /// If user doesn't specify any arguments, returns the second Decor method.
+        /// If user does specify the arguments:
+        ///     Turns 1st argument into a string.
+        ///     Turns 2nd argument into a character.
+        ///     Turns 3rd argument into an integer and converts it to string.
+        ///     Displays the end result using the method Decor.
         /// </summary>
         /// <param name="args">Arguments inputted into the console.</param>
         private static void Main(string[] args)
@@ -45,6 +47,10 @@ namespace BetterDecorador
             return $"{decoration} {str} {decoration}";
         }
 
+        /// <summary>
+        /// Method used in case the user doesn't specify arguments.
+        /// </summary>
+        /// <returns>Returns the specified string and repeats the specified character 3 times with the same structure as the first "Decor" method.</returns>
         private static string Decor()
         {
             return Decor("User did not specify args!",'=', 3);
