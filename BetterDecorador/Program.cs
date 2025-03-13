@@ -2,7 +2,10 @@
 
 namespace BetterDecorador
 {
-    
+    /// <summary>
+    /// Using the console, the program gets 3 arguments from the user, a string, a character and an integer.
+    /// Displays the text with the character the user inputted the amount of times the user sets.
+    /// </summary>
     public class Program
     {
         /// <summary>
