@@ -21,6 +21,12 @@ namespace BetterDecorador
             string str = args[0];
             char chr = args[1][0];
             int count = Int32.Parse(args[2]);
+            
+            if (args.Length == 0)
+            {
+                Console.WriteLine(Decor());
+                return;
+            }
 
             Console.WriteLine(Decor(str, chr, count));
         }
@@ -35,6 +41,11 @@ namespace BetterDecorador
         {
             string decoration = new string(chr, count);
             return $"{decoration} {str} {decoration}";
+        }
+
+        private static string Decor()
+        {
+            return Decor("User did not specify args!",'=', 3);
         }
     }
 }
